@@ -104,15 +104,14 @@ body{
 }
 .sidebar-left {
     position: fixed;
-    top: 40px;
+    top: 50px;
     bottom: 0;
-    left: 0;
-    overflow-y: auto; /* Enable vertical scrolling */
-    padding-top: 15px; /* Adjust as needed */
-    padding-bottom: 15px; /* Adjust as needed */
-    background-color: transparent; /* Example background color */
-    border-right: 1px solid #dee2e6; /* Example border for separation */
-    z-index: 1000; /* Ensure sidebar stays above other content */
+    left: 40;
+    overflow-y: auto; 
+    padding-top: 15px;
+    padding-bottom: 15px; 
+    background-color: transparent; 
+    z-index: 1000; 
 }
 .accordion-item{
 	margin-bottom: 20px;
@@ -128,7 +127,57 @@ body{
     color: #3e3552 !important;
     background-color: #eff0f0;
 }
+.accordion-body{
+    background-color: #eff0f0;
+    border-radius: 5px !important;
+    overflow-y: scroll;
+    height: 300px;
+    min-height: 235px;
+}
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px; /* width of vertical scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ccc; /* color of the scrollbar thumb */
+  border-radius: 4px; /* rounded corners */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #999; /* color of the scrollbar thumb on hover */
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1; /* color of the scrollbar track */
+  border-radius: 4px; /* rounded corners */
+}
+.accordUl{
+    list-style: none;
+    padding-right: 10px;
+    padding-left: 15px;
+    margin-bottom: 0;
+    overflow: auto;
+}
+.categ{
+    border-bottom: 1px dotted rgba(0, 0, 0, .1);
+    position: relative;
+    padding: 7px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.categAnc{
+    text-decoration: none;
+    font-size: 17px;
+    color: #3e3552;
+    text-transform: lowercase;
+}
+.categSp{
+    font-size: 17px;
+    font-weight: 600;
+}
 
 .otherJobS {
-    margin-left: 25%; /* Adjust according to the width of the sidebar */
+    margin-left: 25%;
 }

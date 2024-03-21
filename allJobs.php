@@ -15,7 +15,7 @@
 
 	<div class="container my-5">
 		<div class="row">
-			<div class="col-lg-4 sidebar-left">
+			<div class="col-lg-3 sidebar-left">
 
 				<div class="accordion accordion-flush" id="accordionFlushExample">
 				  <div class="accordion-item">
@@ -25,7 +25,114 @@
 				      </button>
 				    </h2>
 				    <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-				      <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+				      <div class="accordion-body">
+				      	<ul class="accordUl">
+				      		<li class="categ">
+				      			<a class="categAnc" href="#">Carlow</a>
+				      			<span class="categSp">200</span>
+				      		</li>
+				      		<li class="categ">
+				      			<a class="categAnc" href="#">Cavan</a>
+				      			<span class="categSp">200</span>
+				      		</li>
+				      		<li class="categ">
+				      			<a class="categAnc" href="#">Clare</a>
+				      			<span class="categSp">200</span>
+				      		</li>
+				      		<li class="categ">
+				      			<a class="categAnc" href="#">Cork</a>
+				      			<span class="categSp">200</span>
+				      		</li>
+				      		<li class="categ">
+				      			<a class="categAnc" href="#">Donegal</a>
+				      			<span class="categSp">200</span>
+				      		</li>
+				      		<li class="categ">
+				      			<a class="categAnc" href="#">Dublin</a>
+				      			<span class="categSp">200</span>
+				      		</li>
+				      		<li class="categ">
+				      			<a class="categAnc" href="#">Galway</a>
+				      			<span class="categSp">200</span>
+				      		</li>
+				      		<li class="categ">
+				      			<a class="categAnc" href="#">Kerry</a>
+				      			<span class="categSp">200</span>
+				      		</li>
+				      		<li class="categ">
+				      			<a class="categAnc" href="#">Kildare</a>
+				      			<span class="categSp">200</span>
+				      		</li>
+				      		<li class="categ">
+				      			<a class="categAnc" href="#">Kilkenny</a>
+				      			<span class="categSp">200</span>
+				      		</li>
+				      		<li class="categ">
+				      			<a class="categAnc" href="#">Laois</a>
+				      			<span class="categSp">200</span>
+				      		</li>
+				      		<li class="categ">
+				      			<a class="categAnc" href="#">Leitrim</a>
+				      			<span class="categSp">200</span>
+				      		</li>
+				      		<li class="categ">
+				      			<a class="categAnc" href="#">Limerick</a>
+				      			<span class="categSp">200</span>
+				      		</li>
+				      		<li class="categ">
+				      			<a class="categAnc" href="#">Longford</a>
+				      			<span class="categSp">200</span>
+				      		</li>
+				      		<li class="categ">
+				      			<a class="categAnc" href="#">Louth</a>
+				      			<span class="categSp">200</span>
+				      		</li>
+				      		<li class="categ">
+				      			<a class="categAnc" href="#">Mayo</a>
+				      			<span class="categSp">200</span>
+				      		</li>
+				      		<li class="categ">
+				      			<a class="categAnc" href="#">Meath</a>
+				      			<span class="categSp">200</span>
+				      		</li>
+				      		<li class="categ">
+				      			<a class="categAnc" href="#">Monaghan</a>
+				      			<span class="categSp">200</span>
+				      		</li>
+				      		<li class="categ">
+				      			<a class="categAnc" href="#">Offaly</a>
+				      			<span class="categSp">200</span>
+				      		</li>
+				      		<li class="categ">
+				      			<a class="categAnc" href="#">Roscommon</a>
+				      			<span class="categSp">200</span>
+				      		</li>
+				      		<li class="categ">
+				      			<a class="categAnc" href="#">Sligo</a>
+				      			<span class="categSp">200</span>
+				      		</li>
+				      		<li class="categ">
+				      			<a class="categAnc" href="#">Tipperary</a>
+				      			<span class="categSp">200</span>
+				      		</li>
+				      		<li class="categ">
+				      			<a class="categAnc" href="#">Waterford</a>
+				      			<span class="categSp">200</span>
+				      		</li>
+				      		<li class="categ">
+				      			<a class="categAnc" href="#">Westmeath</a>
+				      			<span class="categSp">200</span>
+				      		</li>
+				      		<li class="categ">
+				      			<a class="categAnc" href="#">Wexford</a>
+				      			<span class="categSp">200</span>
+				      		</li>
+				      		<li class="categ">
+				      			<a class="categAnc" href="#">Wicklow</a>
+				      			<span class="categSp">200</span>
+				      		</li>
+				      	</ul>
+				      </div>
 				    </div>
 				  </div>
 				  <div class="accordion-item">
@@ -35,7 +142,34 @@
 				      </button>
 				    </h2>
 				    <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-				      <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+				      <div class="accordion-body">
+				      	<ul>
+				      		<a href="#"><li>Carlow</li></a>
+				      		<a href="#"><li>Cavan</li></a>
+				      		<a href="#"><li>Clare</li></a>
+				      		<a href="#"><li>Cork</li></a>
+				      		<a href="#"><li>Donegal</li></a>
+				      		<a href="#"><li>Dublin</li></a>
+				      		<a href="#"><li>Galway</li></a>
+				      		<a href="#"><li>Kerry</li></a>
+				      		<a href="#"><li>Kildare</li></a>
+				      		<a href="#"><li>Kilkenny</li></a>
+				      		<a href="#"><li>Laois</li></a>
+				      		<a href="#"><li>Leitrim</li></a>
+				      		<a href="#"><li>Limerick</li></a>
+				      		<a href="#"><li>Longford</li></a>
+				      		<a href="#"><li>Louth</li></a>
+				      		<a href="#"><li>Mayo</li></a>
+				      		<a href="#"><li>Meath</li></a>
+				      		<a href="#"><li>Monaghan</li></a>
+				      		<a href="#"><li>Offaly</li></a>
+				      		<a href="#"><li>Roscommon</li></a>
+				      		<a href="#"><li>Sligo</li></a>
+				      		<a href="#"><li>Sligo</li></a>
+				      		<a href="#"><li>Sligo</li></a>
+				      		<a href="#"><li>Sligo</li></a>
+				      	</ul>
+				      </div>
 				    </div>
 				  </div>
 				  <div class="accordion-item">
@@ -51,7 +185,7 @@
 				</div>
 
 			</div>
-			<div class="col-lg-8 otherJobS">
+			<div class="col-lg-9 otherJobS">
 				
 			</div>
 		</div>
