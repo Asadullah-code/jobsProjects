@@ -44,14 +44,15 @@ body{
 }
 .areHead{
 	color: var(--primary-color);
-	font-size: 18px;
+	font-size: 19px;
     line-height: 21px;
     padding-bottom: 16px;
     display: flex;
     align-items: center;
     margin: 0;
-    font-weight: 650;
+    font-weight: 750;
     margin-bottom: 10px;
+    letter-spacing: 0.8px;
 }
 .areSpan{
 	background-color: #eff0f0;
@@ -107,13 +108,14 @@ body{
     top: 50px;
     bottom: 0;
     left: 40;
-    overflow-y: auto; 
+    /*overflow-y: auto; */
     padding-top: 15px;
     padding-bottom: 15px; 
     background-color: transparent; 
     z-index: 1000; 
 }
 .accordion-item{
+    width: 370px !important;
 	margin-bottom: 20px;
 }
 .accordion-button{
@@ -126,10 +128,20 @@ body{
     font-weight: 800;
     color: #3e3552 !important;
     background-color: #eff0f0;
+    outline: none !important;
+}
+.accordion-button:focus {
+    box-shadow: none;
+    border-color: rgba(0,0,0,.125);
+}
+.accordion-button:not(.collapsed){
+    color: none !important;
+    background-color: #eff0f0;
+    border-color: red !important;
 }
 .accordion-body{
     background-color: #eff0f0;
-    border-radius: 5px !important;
+    border-radius: 0px !important;
     overflow-y: scroll;
     height: 300px;
     min-height: 235px;
@@ -154,8 +166,8 @@ body{
 }
 .accordUl{
     list-style: none;
-    padding-right: 10px;
-    padding-left: 15px;
+    padding-right: 0px;
+    padding-left: 0px;
     margin-bottom: 0;
     overflow: auto;
 }
@@ -170,14 +182,286 @@ body{
 .categAnc{
     text-decoration: none;
     font-size: 17px;
+    font-weight: 450;
     color: #3e3552;
     text-transform: lowercase;
+    letter-spacing: 0.6px;
+    text-transform: capitalize;
+}
+.categAnc:hover{
+    color: #D83F63;
 }
 .categSp{
+    color: #D83F63;
     font-size: 17px;
-    font-weight: 600;
+    font-weight: 650;
+}
+
+.sidebar {
+    background-color: #f8f9fa; /* Sidebar background color */
+    padding: 15px;
+    border-right: 1px solid #dee2e6; /* Sidebar border */
+    height: 100%; /* Full height */
+    position: relative; /* Position relative for absolute positioning */
+}
+#filter-icon {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+}
+
+@media (min-width: 768px) {
+    #filter-icon {
+        display: none; /* Hide filter icon on medium and larger devices */
+    }
 }
 
 .otherJobS {
-    margin-left: 25%;
+    margin-top: 3px;
+}
+.otherH2{
+    color: #3e3552;
+    margin-bottom: 32px;
+    font-size: 22px;
+    font-weight: 750;
+    line-height: 24px;
+    margin-bottom: 24px;
+    line-height: 46px;
+}
+.otherSp{
+    color: #e37620;
+}
+.otherSp2{
+    color: #3e3552;
+    font-size: 14px;
+}
+.areP{
+    color: #3e3552;
+    font-size: 16.5px;
+    font-weight: 450;
+}
+.areCard2{
+    position: relative;
+    box-shadow: 0px 0px 8px 0px rgba(62, 53, 82, 0.16);
+    border-radius: 8px;
+    flex: 0 0 384px;
+    background-color: #fff;
+    padding: 8px;
+    flex-direction: column;
+    display: flex;
+    min-height: 210px !important;
+    border: 1px solid #EFF0F0;
+    position: relative;
+    margin-bottom: 10px;
+}
+.areCard2:hover{
+    border: 2.5px solid #D83F63;
+}
+
+.areSpanDiv {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #eff0f0;
+    border-radius: 4px;
+    padding: 6px 10px;
+}
+
+.areSpan2{
+    padding: 0px 12px;
+    text-align: center;
+    display: inline-flex;
+    margin-bottom: 0;
+    align-items: center;
+    column-gap: 10px;
+    height: 30px;
+    font-size: 13px;
+    font-weight: 500;
+}
+.areHead2{
+    color: var(--primary-color);
+    font-size: 19px;
+    line-height: 21px;
+    padding-bottom: 16px;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    font-weight: 750;
+    margin-bottom: 0px;
+    letter-spacing: 0.8px;
+}
+.areHead2:hover{
+    color: #D83F63;
+}
+.loadBtn{
+    font-size: 18.5px;
+    font-weight: 750;
+    padding: 0 32px;
+    height: 56px;
+    line-height: 56px;
+    border-radius: 4px;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    white-space: nowrap;
+    background-color: #D83F63;
+    color: #fff !important;
+}
+.loadBtn:hover{
+    background-color: #892e3c;
+    cursor: pointer;
+}
+.dropdBtn{
+    height: 56px;
+    line-height: 54px;
+    text-align: center;
+    padding: 0px 2px;
+    color: #fff !important;
+    background: #D83F63;
+    font-size: 16px;
+    font-weight: 600;
+    width: 200px;
+    text-align: center;
+}
+.dropdBtn:hover{
+    background-color: #892e3c;
+    cursor: pointer;   
+}
+button:focus:not(:focus-visible){
+    background-color: #892e3c;
+}
+.dropdown-menu{
+    width: 270px;
+    padding: 0px !important;
+    margin: 0px !important;
+    margin-top: -5px !important;
+    border-radius: 0px !important;
+    background-color: #D83F63;
+    color: #fff !important;
+    overflow-y: scroll;
+    height: 300px;
+    min-height: 235px;
+}
+.dropdown-item{
+    color: #fff !important;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 450;
+
+}
+.dropdown-item:hover{
+    cursor: pointer;
+    color: #000 !important;
+}
+.jobInput{
+    margin-top: 4px;
+    height: 56px;
+    line-height: 56px;
+    padding: 0px 12px;
+    background-color: #fff !important;
+    border: 2px solid #a4acac;
+}
+.jobInputDiv{
+    display: flex !important;
+    align-items: center !important;
+    justify-content: end !important;
+}
+.filBtn{
+    font-size: 18.5px;
+    font-weight: 750;
+    padding: 0 40px;
+    height: 56px;
+    line-height: 56px;
+    border-radius: 4px;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    white-space: nowrap;
+    background-color: #D83F63;
+    color: #fff !important;
+}
+.filBtn:hover{
+    background-color: #892e3c !important;
+    cursor: pointer;
+}
+.head{
+    background-color: #3e3552;
+}
+.detailH4{
+    font-size: 20px;
+    font-weight:700;
+    line-height: 0.8px;
+    color: #3e3552;
+    margin-bottom: 30px;
+}
+.cardHead{
+    background-color: #eff0f0 !important;
+    padding: 28px;
+}
+.card-subtitle{
+    padding: 12px;
+}
+.applyBtn{
+    width: 100%;
+    font-size: 18.5px;
+    font-weight: 750;
+    padding: 0 40px;
+    height: 56px;
+    line-height: 56px;
+    border-radius: 4px;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    white-space: nowrap;
+    background-color: #D83F63;
+    color: #fff !important;
+    margin-top: 6px;
+}
+.applyBtn:hover{
+    background-color: #892e3c !important;
+    cursor: pointer;
+}
+.applyJobCard{
+    box-shadow: 0px 8px 16px rgba(62, 53, 82, 0.1);
+    border-radius: 8px;
+}
+.applyJobInput{
+    padding: 12px;
+}
+.applyBtn2{
+    width: 180px;
+    font-size: 18.5px;
+    font-weight: 750;
+    padding: 0 40px;
+    height: 56px;
+    line-height: 56px;
+    border-radius: 4px;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    white-space: nowrap;
+    background-color: #D83F63;
+    color: #fff !important;
+    margin-top: 6px;
+}
+.applyBtn2:hover{
+    background-color: #892e3c !important;
+    cursor: pointer;
+}
+@media only screen and (max-width: 768px) {
+    .dropdBtn{
+        width: 300px !important;
+    }
+    .filBtn{
+        width: 300px;
+    }
+    .jobInput{
+        width: 300px !important;
+    }
+    .jobInputDiv{
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+  .areCard2{
+    min-height: 300px !important;
+  }
 }
